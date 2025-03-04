@@ -1,8 +1,11 @@
+const larguraJogo = 700;
+const alturaJogo = 850;
+
 const config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    backgroundColor: "#c1a0e0",
+    width: larguraJogo,
+    height: alturaJogo,
+    backgroundColor: "#8EDEB2",
     pixelArt: true,
     roundPixel: false,
     scale: {
@@ -16,7 +19,10 @@ const config = {
             debug: true
         }
     },
-    scene: [CenaUm, CenaDois],
+    scene: [CenaUm, CenaDois ],
 };
 
 const game = new Phaser.Game(config);
+
+console.log(window.innerHeight)
+console.log(window.innerWidth)
