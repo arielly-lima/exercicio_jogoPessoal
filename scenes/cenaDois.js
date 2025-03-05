@@ -5,9 +5,9 @@ class CenaDois extends Phaser.Scene {
 
     preload() {
         this.load.spritesheet('pato2', 'assets/spritePato.png', { frameWidth: 320, frameHeight: 320 });
-        this.load.image('abacate', 'assets/abacate.png');
-        this.load.image('pitaia', 'assets/pitaia.png');
-        this.load.image('morango', 'assets/morango.png');
+        this.load.image('abacate', 'assets/abacate.PNG');
+        this.load.image('pitaia', 'assets/pitaia.PNG');
+        this.load.image('morango', 'assets/morango.PNG');
     }
 
     create() {
