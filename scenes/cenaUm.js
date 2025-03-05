@@ -10,6 +10,21 @@ class CenaUm extends Phaser.Scene{
 
    }
    create(){
+
+    //funcao para criar uma hitbox retangular
+function createButton(graphics, x, y, width, height, funcao) {
+    //cria o retangulo
+    graphics.setInteractive(
+      (this.retangulo = new Phaser.Geom.Rectangle(x, y, width, height)),
+      Phaser.Geom.Rectangle.Contains
+    );
+    //realizar funcao ao clicar na hitbox
+    graphics.on("pointerdown", funcao);
+    //ativa o debug
+    graphics.strokeRectShape(this.retangulo);
+  }
+
+
     this.add.image(larguraJogo / 2, alturaJogo / 1.6, 'pato').setScale(0.9);
 
     this.add.text(larguraJogo / 2, alturaJogo / 4, "Like a Duck!", {
@@ -23,7 +38,7 @@ class CenaUm extends Phaser.Scene{
         }).setOrigin(0.5, 0.5).setInteractive();
 
     botaoComecar.on('pointerdown', () => {
-        window.location.href = 'cenaDois.js';
+        this.scene.start("CenaDois");
     });
     
 
