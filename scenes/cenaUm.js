@@ -6,13 +6,13 @@ class CenaUm extends Phaser.Scene{
 
    preload(){
     this.load.image('pato', 'assets/pato.png');
-
+    this.load.image('bg', 'assets/background.png');
 
    }
    create(){
 
     //funcao para criar uma hitbox retangular
-function createButton(graphics, x, y, width, height, funcao) {
+    function createButton(graphics, x, y, width, height, funcao) {
     //cria o retangulo
     graphics.setInteractive(
       (this.retangulo = new Phaser.Geom.Rectangle(x, y, width, height)),
@@ -27,8 +27,8 @@ function createButton(graphics, x, y, width, height, funcao) {
 
     this.add.image(larguraJogo / 2, alturaJogo / 1.6, 'pato').setScale(0.9);
 
-    this.add.text(larguraJogo / 2, alturaJogo / 4, "Like a Duck!", {
-        fontSize: '60px', 
+    this.add.text(larguraJogo / 2, alturaJogo / 4, "Duck and fruits!", {
+        fontSize: '50px', 
         fill: '#495613',
     }).setOrigin(0.5, 0.5);
 
@@ -41,6 +41,7 @@ function createButton(graphics, x, y, width, height, funcao) {
         this.scene.start("CenaDois");
     });
     
+ 
 
 
     

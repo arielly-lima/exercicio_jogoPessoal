@@ -8,6 +8,7 @@ class CenaDois extends Phaser.Scene {
         this.load.image('abacate', 'assets/abacate.png');
         this.load.image('pitaia', 'assets/pitaia.png');
         this.load.image('morango', 'assets/morango.png');
+        this.load.image('plataforma', 'assets/plataforma.png');
     }
 
     create() {
@@ -56,6 +57,8 @@ class CenaDois extends Phaser.Scene {
             fill: '#495613',
         }).setOrigin(0.5, 0.5).setVisible(false);
     }
+
+    
 
     coletarFruta(fruta, pontos) {
         fruta.setVisible(false);

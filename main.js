@@ -19,7 +19,7 @@ const config = {
             debug: true
         }
     },
-    scene: [ CenaUm, CenaDois ],
+    scene: [ CenaUm, CenaDois],
 };
 
 const game = new Phaser.Game(config);
