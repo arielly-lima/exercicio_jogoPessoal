@@ -52,7 +52,7 @@ class CenaDois extends Phaser.Scene {
             this.coletarFruta(this.abacate, 10));
 
         this.gameOverText = this.add.text(larguraJogo / 2, alturaJogo / 2, 'Game Over', { 
-            fontSize: '75px', 
+            fontSize: '75px',
             fill: '#495613',
         }).setOrigin(0.5, 0.5).setVisible(false);
     }
