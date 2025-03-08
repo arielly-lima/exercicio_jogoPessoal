@@ -8,7 +8,7 @@
 
 
 #### 🎮 Controles:
-Controles: Seta esquerda (<-), movimenta do pato para esquerda, Seta direita (->), movimenta o pato para direita e seta para cima, faz o pato pular.
+Seta esquerda (<-), movimenta do pato para esquerda, Seta direita (->), movimenta o pato para direita e seta para cima, faz o pato pular.
 
 #### 💻 Comentários:
 O jogo foi desenvolvido em cenas Phase.js, em um curto período de tempo, por isso ainda está em melhoramento.
