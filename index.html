@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Jogo</title>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
-    <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            html, body{
-                width: 100%;
-                height: 100%;
-            }
-        </style>
 
-    
+    <!-- Importa a biblioteca Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+
+    <style>
+        /* Remove margens e preenchimentos padrão */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define a largura e altura da página para ocupar toda a tela */
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
 <body>
 
+    <!-- Importa os arquivos de cenas do jogo -->
     <script src="scenes/cenaUm.js"></script>
     <script src="scenes/cenaDois.js"></script>
+    <script src="scenes/cenaTrês.js"></script> <!-- Atenção ao acento no nome do arquivo -->
+    <script src="scenes/cenaQuatro.js"></script>
+
+    <!-- Importa o arquivo principal do jogo -->
     <script src="main.js"></script>
 
 </body>
