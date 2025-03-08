@@ -72,7 +72,7 @@ class CenaQuatro extends Phaser.Scene {
             { x: 150, y: 550 },
             { x: 400, y: 470 },
             { x: 650, y: 310 },
-            { x: 210, y: 250 },
+            { x: 190, y: 260 },
             { x: 450, y: 130 },
         ];
 
